@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@wendermendes 
-gabydias
-/
-devopslab-t05
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-devopslab-t05/.github/workflows/pipeline.yml
-@gabydias
-gabydias Fix Region AppEngine Quota Problem
-Latest commit 483845f 6 days ago
- History
- 1 contributor
-93 lines (78 sloc)  2.64 KB
-   
 # Nome do Workflow
 name: DevOpsLab Pipeline
 
@@ -116,17 +88,4 @@ jobs:
           image_url: ${{ secrets.ARTIFACT_REGISTRY }}/myapp:latest
 
       - name: Prod Test
-        run: 'curl "${{ steps.appengine.outputs.url }}"'  
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+        run: 'curl "${{ steps.appengine.outputs.url }}"'
