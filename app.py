@@ -8,4 +8,5 @@ def pagina_inicial():
     return "Hello Word, this is my personalized message, By: Wender Oliveira."
 
 if __name__ == '__main__':
-    app.run()
+    port = os.getenv('PORT')
+    app.run('0.0.0.0', port=port)
